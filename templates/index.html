@@ -1,0 +1,640 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}VKS Server{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+	    <a class="navbar-brand" href="/Logout/{{username}}">Logout</a>
+
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+		    <li><a href="/index/pd/{{username}}">Personal deatils</a></li>
+            </ul>
+	</div>
+    </div>
+</div>
+<input type="button"  value = " " onclick="return Box1(this, '{{url}}', '{{g1}}');"/>
+<input type="button"  value = " " onclick="return Box2(this, '{{url}}', '{{g2}}');"/>
+<input type="button"  value = " " onclick="return Box3(this, '{{url}}', '{{g3}}');"/>
+<input type="button"  value = " " onclick="return Box4(this, '{{url}}', '{{g4}}');"/>
+<input type="button"  value = " " onclick="return Box5(this, '{{url}}', '{{g5}}');"/>
+<input type="button"  value = " " onclick="return Box6(this, '{{url}}', '{{g6}}');"/>
+<input type="button"  value = " " onclick="return Box7(this, '{{url}}', '{{g7}}');"/>
+<p></p>
+<input type="button"  value = " " onclick="return Box8(this, '{{url}}', '{{g8}}');"/>
+<input type="button"  value = " " onclick="return Box9(this, '{{url}}', '{{g9}}');"/>
+<input type="button"  value = " " onclick="return Box10(this, '{{url}}', '{{g10}}');"/>
+<input type="button"  value = " " onclick="return Box11(this, '{{url}}', '{{g11}}');"/>
+<input type="button"  value = " " onclick="return Box12(this, '{{url}}', '{{g12}}');"/>
+<input type="button"  value = " " onclick="return Box13(this, '{{url}}', '{{g13}}');"/>
+<input type="button"  value = " " onclick="return Box14(this, '{{url}}', '{{g14}}');"/>
+<p></p>
+<input type="button"  value = " " onclick="return Box15(this, '{{url}}', '{{g15}}');"/>
+<input type="button"  value = " " onclick="return Box16(this, '{{url}}', '{{g16}}');"/>
+<input type="button"  value = " " onclick="return Box17(this, '{{url}}', '{{g17}}');"/>
+<input type="button"  value = " " onclick="return Box18(this, '{{url}}', '{{g18}}');"/>
+<input type="button"  value = " " onclick="return Box19(this, '{{url}}', '{{g19}}');"/>
+<input type="button"  value = " " onclick="return Box20(this, '{{url}}', '{{g20}}');"/>
+<input type="button"  value = " " onclick="return Box21(this, '{{url}}', '{{g21}}');"/>
+<p></p>
+<input type="button"  value = " " onclick="return Box22(this, '{{url}}', '{{g22}}');"/>
+<input type="button"  value = " " onclick="return Box23(this, '{{url}}', '{{g23}}');"/>
+<input type="button"  value = " " onclick="return Box24(this, '{{url}}', '{{g24}}');"/>
+<input type="button"  value = " " onclick="return Box25(this, '{{url}}', '{{g25}}');"/>
+<input type="button"  value = " " onclick="return Box26(this, '{{url}}', '{{g26}}');"/>
+<input type="button"  value = " " onclick="return Box27(this, '{{url}}', '{{g27}}');"/>
+<input type="button"  value = " " onclick="return Box28(this, '{{url}}', '{{g28}}');"/>
+<p></p>
+<input type="button"  value = " " onclick="return Box29(this, '{{url}}', '{{g29}}');"/>
+<input type="button"  value = " " onclick="return Box30(this, '{{url}}', '{{g30}}');"/>
+<input type="button"  value = " " onclick="return Box31(this, '{{url}}', '{{g31}}');"/>
+<input type="button"  value = " " onclick="return Box32(this, '{{url}}', '{{g32}}');"/>
+<input type="button"  value = " " onclick="return Box33(this, '{{url}}', '{{g33}}');"/>
+<input type="button"  value = " " onclick="return Box34(this, '{{url}}', '{{g34}}');"/>
+<input type="button"  value = " " onclick="return Box35(this, '{{url}}', '{{g35}}');"/>
+<p></p>
+<input type="button"  value = " " onclick="return Box36(this, '{{url}}', '{{g36}}');"/>
+<input type="button"  value = " " onclick="return Box37(this, '{{url}}', '{{g37}}');"/>
+<input type="button"  value = " " onclick="return Box38(this, '{{url}}', '{{g38}}');"/>
+<input type="button"  value = " " onclick="return Box39(this, '{{url}}', '{{g39}}');"/>
+<input type="button"  value = " " onclick="return Box40(this, '{{url}}', '{{g40}}');"/>
+<input type="button"  value = " " onclick="return Box41(this, '{{url}}', '{{g41}}');"/>
+<input type="button"  value = " " onclick="return Box42(this, '{{url}}', '{{g42}}');"/>
+<p></p>
+<input type="button"  value = " " onclick="return Box43(this, '{{url}}', '{{g43}}');"/>
+<input type="button"  value = " " onclick="return Box44(this, '{{url}}', '{{g44}}');"/>
+<input type="button"  value = " " onclick="return Box45(this, '{{url}}', '{{g45}}');"/>
+<input type="button"  value = " " onclick="return Box46(this, '{{url}}', '{{g46}}');"/>
+<input type="button"  value = " " onclick="return Box47(this, '{{url}}', '{{g47}}');"/>
+<input type="button"  value = " " onclick="return Box48(this, '{{url}}', '{{g48}}');"/>
+<input type="button"  value = " " onclick="return Box49(this, '{{url}}', '{{g49}}');"/>
+<p></p>
+<input type="button" value = "score" onclick="return Box(this);"/>
+<p></p>
+<script type="text/javascript">
+var c = 0;
+
+function Box(ele)
+{
+	ele.value = c;	
+}
+
+function Box1( ele, url, g1 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g1;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box2( ele, url, g2 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g2;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box3( ele, url, g3 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g3;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box4( ele, url, g4 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g4;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box5( ele, url, g5 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g5;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box6(ele, url, g6)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g6;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box7(ele, url, g7)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g7;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box8(ele, url, g8)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g8;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box9(ele, url, g9)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g9;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box10(ele, url, g10)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g10;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+
+function Box11( ele, url, g11 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g11;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box12( ele, url, g12 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g12;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box13( ele, url, g13 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g13;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box14( ele, url, g14 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g14;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box15( ele, url, g15 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g15;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box16(ele, url, g16)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g16;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box17(ele, url, g17)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g17;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box18(ele, url, g18)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g18;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box19(ele, url, g19)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g19;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box20(ele, url, g20)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g20;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box21( ele, url, g21 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g21;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box22( ele, url, g22 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g22;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box23( ele, url, g23 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g23;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box24( ele, url, g24 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g24;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box25( ele, url, g25 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g25;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box26(ele, url, g26)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g26;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box27(ele, url, g27)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g27;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box28(ele, url, g28)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g28;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box29(ele, url, g29)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g29;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box30(ele, url, g30)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g30;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box31( ele, url, g31 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g31;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box32( ele, url, g32 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g32;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box33( ele, url, g33 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g33;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box34( ele, url, g34 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g34;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box35( ele, url, g35 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g35;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box36(ele, url, g36)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g36;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box37(ele, url, g37)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g37;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box38(ele, url, g38)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g38;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box39(ele, url, g39)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g39;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box40(ele, url, g40)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g40;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box41( ele, url, g41 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g41;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box42( ele, url, g42 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g42;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box43( ele, url, g43 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g43;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box44( ele, url, g44 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g44;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box45( ele, url, g45 )
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g45;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box46(ele, url, g46)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g46;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box47(ele, url, g47)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g47;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box48(ele, url, g48)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g48;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+function Box49(ele, url, g49)
+{
+    if ( ele.value === " " )
+        {
+		ele.value = g49;
+		if(ele.value != "*")
+			c++;
+		else
+			window.location.replace(url);
+		}
+}
+</script>
+{% endblock %}
+<!--
+<div class="container">
+  <ul class="pager">
+	  <li><a replace="'{{url}}'">redirect</a></li>
+  </ul>
+</div> -->
+
+
