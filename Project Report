@@ -19,9 +19,11 @@ also used many flask extensions and few html files taken from flasky repository.
 code for the webserver has been taken from my python project albeit slightly modified for use.
 
 Future Scope:
+the program can be made more like email system  such as gmail for login and registration, where it shows the currently logged in users, and we can just enter that account by clicking on the username, instead of typing in the url evrytime.
+we can also display the highscore and the time taken for it in the personal details page.
 The program can be modified to house multiple games on the server, and can also further have varying difficulties such as easy, medium and hard for each game.
-It can also be made such that, the highscore is saved everytime the previous one is surpassed and we can also display the user with the maximum highscore for everyone to see.
-Time taken for completion can also be include.
+It can also be made such that, the highscore is saved everytime the previous one is surpassed and we can also display the user with the maximum highscore but minimum time for everyone to see.
+Time taken for completion can also be included.
 A messaging system which sends an notification mail to your registered email id for any updates made can also be included.
 
 Experience:
