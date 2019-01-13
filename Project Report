@@ -1,0 +1,33 @@
+Idea:
+to create an online server containing a small game like minesweeper (7x7 implemented) but implemented in a unique methid (html buttons) using mainly python (no pygame library used), flask, html, css and javascript. 
+
+Technology Used:
+flask
+html
+java scrpit
+css
+openshot video editor
+
+Implementation details:
+web server and pages have been created by using python, flask and its other extensions.
+the minesweeper game has been implemented using button in html, a javascript function, python for the values of each button and flask to pass the value as a variable to the html file.
+the video has been made to fit the window size, using css.
+
+Outsourced Video and Files used:
+https://www.youtube.com/watch?v=KH5Q6jbWIoQ
+also used many flask extensions and few html files taken from flasky repository. License to use has been uploaded to my git repository.
+code for the webserver has been taken from my python project albeit slightly modified for use.
+
+Future Scope:
+The program can be modified to house multiple games on the server, and can also further have varying difficulties such as easy, medium and hard for each game.
+It can also be made such that, the highscore is saved everytime the previous one is surpassed and we can also display the user with the maximum highscore for everyone to see.
+Time taken for completion can also be include.
+A messaging system which sends an notification mail to your registered email id for any updates made can also be included.
+
+Experience:
+I learnt a lot of new stuff such as how to write function in js and implement in html, how to write html code and variables in js, learnt a bit of css which i have used in my program.
+however that part will not be clear as there is a problem due to which video is not being displayed in the html file when rendered using flask, but is working perfectly fine when opening the html file.
+this error has not been addressed due to lack of time in being able to learn the implementations of flask and rectify the error.
+this error will be rectified in the near future.
+However i also felt a lack of time as i had to balance between academics, breaktime, P.E and this project. also there had been a few functions in between such as pongal and other holidays where i had to meet my relatives and hence couldn't find the time to put into the project.
+
