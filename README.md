@@ -1,5 +1,5 @@
 # zenseapplicationprogram
-web server containing a 7x7 minesweeper game with 16 mines to apply for joining zense.
+Web server containing a 7x7 minesweeper game with 16 mines to apply for joining zense.
 first run the program by passing the command: 
 :~$ python zense.py runserver xxx.x.x.x:xxxx (here xxx.x.x.x:xxxx is the public ip of the host or the system that hosts the server. if not public ip is passed, then the default is 127.0.0.1:5000, in which case the server is accessible only by the host)
 once an user has logged in, you (the host) can see his minsweeper grid in matrix format.
